@@ -1,0 +1,16 @@
+<Window x:Class="Buckets.BucketFillLevelSettingsWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Настройка заполнения" Height="570" Width="460" MinHeight="520" MinWidth="420" WindowStartupLocation="CenterOwner">
+    <DockPanel Margin="14">
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Заполнение каждого ведра: от 0 до 10 литров." FontWeight="SemiBold"/>
+            <TextBlock Text="Максимум случайной генерации" Margin="0,10,0,0"/>
+            <DockPanel Margin="0,3,0,8"><TextBlock x:Name="RandomPercentLabel" Text="100%" Width="48" VerticalAlignment="Center"/><Slider x:Name="RandomPercentSlider" Minimum="0" Maximum="100" Value="100" TickFrequency="10" IsSnapToTickEnabled="True" ValueChanged="RandomPercentSlider_ValueChanged"/></DockPanel>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Сброс" Width="70" Margin="3" Click="Reset_Click"/>
+            <Button Content="Случайно" Width="85" Margin="3" Click="Random_Click"/>
+            <Button Content="Отмена" Width="75" Margin="3" IsCancel="True"/>
+            <Button Content="ОК" Width="65" Margin="3" IsDefault="True" Click="Ok_Click"/>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"><ItemsControl x:Name="FillRows"><ItemsControl.ItemTemplate><DataTemplate><Grid Margin="3"><Grid.ColumnDefinitions><ColumnDefinition Width="70"/><ColumnDefinition Width="35"/><ColumnDefinition Width="*"/><ColumnDefinition Width="35"/></Grid.ColumnDefinitions><TextBlock Text="{Binding Label}" VerticalAlignment="Center"/><Button Grid.Column="1" Content="−" Tag="{Binding Id}" Click="Decrement_Click"/><TextBox Grid.Column="2" Text="{Binding Amount, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center" VerticalContentAlignment="Center" Margin="4,0" PreviewTextInput="NumberValidation" LostFocus="Amount_LostFocus"/><Button Grid.Column="3" Content="+" Tag="{Binding Id}" Click="Increment_Click"/></Grid></DataTemplate></ItemsControl.ItemTemplate></ItemsControl></ScrollViewer>
+    </DockPanel>
+</Window>
