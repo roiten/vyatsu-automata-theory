@@ -3,27 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\bucketfilllevelsettingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:bucketfilllevelsettingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\bucketfilllevelsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:bucketfilllevelsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\colorsettingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:colorsettingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\colorsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\colorsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:colorsettingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|c:\\users\\roiten\\documents\\vyatsu_institute\\automata-theory\\buckets\\aboutprogramwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\aboutprogramwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6601117F-0BA2-4F3B-9529-C73845C20EE0}|Buckets.csproj|solutionrelative:aboutprogramwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -39,19 +47,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BucketFillLevelSettingsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\BucketFillLevelSettingsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BucketFillLevelSettingsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\BucketFillLevelSettingsWindow.xaml.cs",
+              "RelativeToolTip": "BucketFillLevelSettingsWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIA4wB4AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T11:43:13.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BucketFillLevelSettingsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\BucketFillLevelSettingsWindow.xaml",
+              "RelativeDocumentMoniker": "BucketFillLevelSettingsWindow.xaml",
+              "ToolTip": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\BucketFillLevelSettingsWindow.xaml",
+              "RelativeToolTip": "BucketFillLevelSettingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-20T11:43:11.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ColorSettingsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\ColorSettingsWindow.xaml.cs",
               "RelativeDocumentMoniker": "ColorSettingsWindow.xaml.cs",
               "ToolTip": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\ColorSettingsWindow.xaml.cs",
               "RelativeToolTip": "ColorSettingsWindow.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwD0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAIAzwCUAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T15:03:28.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ColorSettingsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\ColorSettingsWindow.xaml",
               "RelativeDocumentMoniker": "ColorSettingsWindow.xaml",
@@ -63,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "BucketController.cs",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\BucketController.cs",
               "RelativeDocumentMoniker": "BucketController.cs",
@@ -71,25 +104,24 @@
               "RelativeToolTip": "BucketController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwCwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T13:48:38.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:48:38.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwDgAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T13:09:21.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -101,15 +133,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AboutProgramWindow.xaml",
               "DocumentMoniker": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\AboutProgramWindow.xaml",
               "RelativeDocumentMoniker": "AboutProgramWindow.xaml",
               "ToolTip": "C:\\Users\\roiten\\Documents\\vyatsu_institute\\automata-theory\\Buckets\\AboutProgramWindow.xaml",
               "RelativeToolTip": "AboutProgramWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-18T11:00:33.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T11:00:33.034Z"
             }
           ]
         }

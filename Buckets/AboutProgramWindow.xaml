@@ -1,7 +1,8 @@
-<Window x:Class="Buckets.AboutProgramWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="О программе" Height="259" Width="420" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
-    <StackPanel Margin="24,24,24,15">
-        <TextBlock Text="Вёдра" FontSize="24" FontWeight="Bold" Margin="0,0,0,12"/>
-        <TextBlock Text="Учебная программа-игра по теории автоматов." TextWrapping="Wrap"/>
-        <TextBlock Text="Десять вёдер постепенно заполняются случайными каплями. Полные вёдра исчезают, а аварийная лампа может временно убрать неполное ведро. На следующем такте убранные вёдра возвращаются пустыми." TextWrapping="Wrap" Margin="0,10,0,0" Height="70"/>
-        <Button Content="Закрыть" Width="90" HorizontalAlignment="Right" Margin="0,20,0,20" IsCancel="True"/></StackPanel>
+<Window x:Class="Buckets.AboutProgramWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="О программе" Height="270" Width="440" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize" Background="#FFF7F8FA">
+    <StackPanel Margin="24">
+        <TextBlock Text="Вёдра" FontSize="24" FontWeight="Bold" Margin="0,0,0,12" />
+        <TextBlock Text="Учебная программа-игра по теории автоматов." TextWrapping="Wrap" />
+        <TextBlock Text="Десять вёдер постепенно заполняются каплями. После каждой капли с заданной вероятностью аварийная лампочка может вылить один литр из непустого неполного ведра. Полные вёдра остаются на экране. Когда все вёдра заполнены, появляется зелёное уведомление." TextWrapping="Wrap" Margin="0,10,0,0" />
+        <Button Content="Закрыть" Width="90" HorizontalAlignment="Right" Margin="0,20,0,0" Click="Close_Click" />
+    </StackPanel>
 </Window>

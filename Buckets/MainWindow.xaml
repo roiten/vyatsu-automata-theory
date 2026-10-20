@@ -1,88 +1,67 @@
 <Window x:Class="Buckets.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Вёдра" Height="590" Width="950" MinHeight="500" MinWidth="800"
-        WindowStartupLocation="CenterScreen">
-    <DockPanel>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Файл">
-                <MenuItem Header="Открыть..." Click="OpenConfig_Click"/>
-                <MenuItem Header="Сохранить..." Click="SaveConfig_Click"/>
-                <MenuItem Header="Сохранить как..." Click="SaveAsConfig_Click"/>
-                <Separator/><MenuItem Header="Выход" Click="Exit_Click"/>
-            </MenuItem>
-            <MenuItem Header="Настройки">
-                <MenuItem Header="Цвета вёдер..." Click="Colors_Click"/>
-                <MenuItem Header="Заполнение вёдер..." Click="Fill_Click"/>
-                <MenuItem Header="Случайная генерация заполнения" Click="RandomFill_Click"/>
-            </MenuItem>
-            <MenuItem Header="Сведения">
-                <MenuItem Header="О программе" Click="About_Click"/>
-                <MenuItem Header="Об авторе" Click="Author_Click"/>
-            </MenuItem>
-        </Menu>
-        <StatusBar DockPanel.Dock="Bottom"><TextBlock x:Name="StatusText" Text="Готово."/></StatusBar>
-        <Grid Margin="16">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="2*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-            <!-- Сетка вёдер — как было -->
-            <UniformGrid x:Name="BucketsPanel" Grid.Column="0" Grid.Row="0"
-                 Columns="5" Rows="2" Margin="0,0,12,12"/>
-
-            <!-- Правая колонка: ползунки по центру, кнопки снизу -->
-            <Grid Grid.Column="1" Grid.Row="0" Margin="12,10,12,10">
+        xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
+        Title="Вёдра" Height="650" Width="1000" MinHeight="600" MinWidth="800"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResize"
+        Background="#FFF7F8FA">
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome CaptionHeight="0" ResizeBorderThickness="6" GlassFrameThickness="0" UseAeroCaptionButtons="False" />
+    </shell:WindowChrome.WindowChrome>
+    <Grid>
+        <DockPanel>
+            <Border DockPanel.Dock="Top" Background="#FFEEEEEE" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+            <Menu Background="Transparent" HorizontalAlignment="Left">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Открыть..." Click="OpenConfig_Click" />
+                    <MenuItem Header="Сохранить..." Click="SaveConfig_Click" />
+                    <Separator />
+                    <MenuItem Header="Выход" Click="Exit_Click" />
+                </MenuItem>
+                <MenuItem Header="Настройки">
+                    <MenuItem Header="Цвета вёдер..." Click="Colors_Click" />
+                    <MenuItem Header="Наполненность вёдер..." Click="Fill_Click" />
+                </MenuItem>
+                <MenuItem Header="О программе">
+                    <MenuItem Header="О программе..." Click="About_Click" />
+                    <MenuItem Header="Об авторе..." Click="AboutAuthor_Click" />
+                </MenuItem>
+            </Menu>
+            </Border>
+            <Grid x:Name="MainContent" Margin="16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="2*" MinWidth="220" />
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <!-- пружина сверху -->
-                    <RowDefinition Height="Auto"/>
-                    <!-- блок ползунков по центру -->
-                    <RowDefinition Height="*"/>
-                    <!-- пружина снизу -->
-                    <RowDefinition Height="Auto"/>
-                    <!-- кнопки внизу -->
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-
-                <StackPanel Grid.Row="1">
-                    <TextBlock Text="Скорость заполнения (0–100)" FontWeight="Bold"/>
+                <!-- Каждое ведро лежит во Viewbox, поэтому масштабируется вместе с окном -->
+                <UniformGrid x:Name="BucketsPanel" Grid.Column="0" Grid.Row="0" Columns="5" Rows="2" Margin="0,0,12,12" />
+                <StackPanel Grid.Column="1" Grid.Row="0" Margin="12,10,0,0">
+                    <TextBlock Text="Скорость генерации воды (0–100)" FontWeight="Bold" />
                     <DockPanel Margin="0,6,0,0">
-                        <TextBox x:Name="SpeedInput" Width="52" Text="50" Margin="8,0,0,0"
-                         DockPanel.Dock="Right" VerticalContentAlignment="Center"
-                         TextAlignment="Center" LostFocus="SpeedInput_LostFocus"
-                         PreviewTextInput="NumberValidation"/>
-                        <Slider x:Name="SpeedSlider" Minimum="0" Maximum="100" Value="50"
-                        TickFrequency="10" IsSnapToTickEnabled="True"
-                        ValueChanged="SpeedSlider_ValueChanged"/>
+                        <TextBox x:Name="SpeedInput" Width="52" Text="50" Margin="8,0,0,0" DockPanel.Dock="Right" VerticalContentAlignment="Center" TextAlignment="Center" LostFocus="SpeedInput_LostFocus" KeyDown="Input_KeyDown" PreviewTextInput="NumberValidation" />
+                        <Slider x:Name="SpeedSlider" Minimum="0" Maximum="100" Value="50" TickFrequency="10" TickPlacement="BottomRight" SmallChange="1" LargeChange="10" ValueChanged="SpeedSlider_ValueChanged" />
                     </DockPanel>
-                    <TextBlock x:Name="IntervalText" Text="Интервал: 1,85 с"
-                       Foreground="Gray" Margin="0,4,0,0"/>
-                    <TextBlock Text="Аварийная лампочка (%)" FontWeight="Bold" Margin="0,24,0,0"/>
+                    <TextBlock x:Name="IntervalText" Text="Интервал: 1,85 с" Foreground="Gray" Margin="0,4,0,0" />
+                    <TextBlock Text="Аварийная лампочка (0–100 %)" FontWeight="Bold" Margin="0,24,0,0" />
                     <DockPanel Margin="0,6,0,0">
-                        <TextBox x:Name="EmergencyInput" Width="52" Text="20" Margin="8,0,0,0"
-                         DockPanel.Dock="Right" VerticalContentAlignment="Center"
-                         TextAlignment="Center" LostFocus="EmergencyInput_LostFocus"
-                         PreviewTextInput="NumberValidation"/>
-                        <Slider x:Name="EmergencySlider" Minimum="0" Maximum="100" Value="20"
-                        TickFrequency="10" IsSnapToTickEnabled="True"
-                        ValueChanged="EmergencySlider_ValueChanged"/>
+                        <TextBox x:Name="EmergencyInput" Width="52" Text="20" Margin="8,0,0,0" DockPanel.Dock="Right" VerticalContentAlignment="Center" TextAlignment="Center" LostFocus="EmergencyInput_LostFocus" KeyDown="Input_KeyDown" PreviewTextInput="NumberValidation" />
+                        <Slider x:Name="EmergencySlider" Minimum="0" Maximum="100" Value="20" TickFrequency="10" TickPlacement="BottomRight" SmallChange="1" LargeChange="10" ValueChanged="EmergencySlider_ValueChanged" />
                     </DockPanel>
-                    <TextBlock Text="При аварии случайное неполное ведро убирается до следующего такта."
-                       TextWrapping="Wrap" Foreground="Gray" Margin="0,8,0,0"/>
+                    <TextBlock Text="После каждой капли лампочка может сработать и вылить 1 литр из случайного ведра, заполненного на 1–9 литров." TextWrapping="Wrap" Foreground="Gray" Margin="0,8,0,0" />
                 </StackPanel>
-
-                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button x:Name="StartStopButton"   Content="Пуск"  Width="70" Height="28" Margin="5" Click="StartStop_Click"/>
-                    <Button x:Name="PauseResumeButton" Content="Пауза" Width="70" Height="28" Margin="5" Click="PauseResume_Click" IsEnabled="False"/>
-                    <Button                            Content="Сброс" Width="70" Height="28" Margin="5" Click="Reset_Click"/>
-                    <Button                            Content="Выход" Width="70" Height="28" Margin="5" Click="Exit_Click"/>
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="StartStopButton" Content="Старт" Width="110" Height="36" Margin="5" Click="StartStop_Click" />
+                    <Button x:Name="PauseResumeButton" Content="Пауза" Width="130" Height="36" Margin="5" Click="PauseResume_Click" />
+                    <Button Content="Выход" Width="110" Height="36" Margin="5" Click="Exit_Click" />
                 </StackPanel>
             </Grid>
-        </Grid>
-    </DockPanel>
+        </DockPanel>
+        <Border x:Name="ToastBorder" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20,0,20,60" Padding="16,10" CornerRadius="8" Background="#FFC62828" MaxWidth="700" IsHitTestVisible="False">
+            <TextBlock x:Name="ToastText" Foreground="White" FontWeight="SemiBold" TextWrapping="Wrap" TextAlignment="Center" />
+        </Border>
+    </Grid>
 </Window>

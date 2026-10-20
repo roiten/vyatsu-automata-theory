@@ -1,3 +1,8 @@
-<Window x:Class="Buckets.AboutAuthorWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Об авторе" Height="210" Width="360" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
-    <StackPanel Margin="24"><TextBlock Text="Об авторе" FontSize="22" FontWeight="Bold" Margin="0,0,0,12"/><TextBlock Text="Автор учебного проекта"/><TextBlock Text="Разработано в рамках задания по теории автоматов." TextWrapping="Wrap" Margin="0,8,0,0"/><Button Content="Закрыть" Width="90" HorizontalAlignment="Right" Margin="0,20,0,0" IsCancel="True"/></StackPanel>
+<Window x:Class="Buckets.AboutAuthorWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Об авторе" Height="220" Width="380" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize" Background="#FFF7F8FA">
+    <StackPanel Margin="24">
+        <TextBlock Text="Об авторе" FontSize="22" FontWeight="Bold" Margin="0,0,0,12" />
+        <TextBlock Text="Автор учебного проекта" />
+        <TextBlock Text="Разработано в рамках задания по теории автоматов." TextWrapping="Wrap" Margin="0,8,0,0" />
+        <Button Content="Закрыть" Width="90" HorizontalAlignment="Right" Margin="0,20,0,0" Click="Close_Click" />
+    </StackPanel>
 </Window>

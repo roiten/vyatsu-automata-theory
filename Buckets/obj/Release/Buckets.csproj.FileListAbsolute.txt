@@ -16,8 +16,6 @@ C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\M
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\App.g.cs
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets_MarkupCompile.cache
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.g.resources
-C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.Properties.Resources.resources
-C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.csproj.GenerateResource.cache
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.csproj.CoreCompileInputs.cache
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.exe
 C:\Users\roiten\Documents\vyatsu_institute\automata-theory\Buckets\obj\Release\Buckets.pdb
